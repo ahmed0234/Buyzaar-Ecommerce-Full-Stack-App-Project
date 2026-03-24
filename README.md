@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 BuyZaar
 
-## Getting Started
+A modern full-stack ecommerce platform built with performance, scalability, and real-world production patterns in mind.
+BuyZaar is not just a demo project. It simulates a real ecommerce system with authentication, payments, webhooks, and a clean developer-focused architecture.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Frontend**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Backend**
 
-## Learn More
+- Next.js Server Actions & API Routes
 
-To learn more about Next.js, take a look at the following resources:
+**Database**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- PostgreSQL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**ORM**
 
-## Deploy on Vercel
+- Prisma
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**State Management**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Zustand
+
+**Authentication**
+
+- NextAuth.js
+
+**Payments**
+
+- Stripe (with secure webhook handling)
+
+**Deployment**
+
+- Vercel
+
+---
+
+## ✨ Features
+
+- 🔐 Authentication (Sign up / Login / Protected Routes)
+- 🛍️ Product listing with dynamic data fetching
+- 🛒 Cart system with persistent state using Zustand
+- 💳 Secure checkout with Stripe integration
+- 🔔 Webhook handling for real-time payment confirmation
+- 📦 Order management system
+- 🧾 Order history for users
+- ⚡ Optimized performance using server components
+- 🎨 Clean and responsive UI with Tailwind CSS
+
+---
+
+## 🧠 Architecture Highlights
+
+- Uses **Next.js App Router** for a hybrid server/client rendering approach
+- **Server Actions** for secure backend logic without exposing APIs unnecessarily
+- **Prisma ORM** for type-safe database queries
+- **Zustand** for lightweight and scalable state management
+- **Stripe Webhooks** to ensure reliable payment flow and order updates
+- Fully typed codebase using **TypeScript**
+
+---
+
+## 📈 Future Improvements
+
+- Admin dashboard for product management
+- Multi-vendor support
+- Product reviews & ratings
+- Advanced search & filtering
+- AI-based product recommendations
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
+
+## 👨‍💻 Author (Ahmed Hassan)
+
+Built with focus and intent to simulate real-world production systems and showcase full-stack engineering skills.
+
+---
