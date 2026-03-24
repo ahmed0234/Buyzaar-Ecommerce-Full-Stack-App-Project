@@ -8,7 +8,6 @@
     ".next": true,
     ".vscode": true,
     "node_modules": true,
-    ".gitignore": true,
     "AGENTS.md": true,
     "CLAUDE.md": true,
     "eslint.config.mjs": true,
@@ -16,14 +15,14 @@
     "postcss.config.mjs": true,
     "tsconfig.json": true,
     "bun.lock": true,
+    "README.md": true,
     "package.json": true,
-    "README.md": true
+    ".gitignore": true
   },
   "hide-files.files": [
     ".next",
     ".vscode",
     "node_modules",
-    ".gitignore",
     "AGENTS.md",
     "CLAUDE.md",
     "eslint.config.mjs",
@@ -31,7 +30,8 @@
     "postcss.config.mjs",
     "tsconfig.json",
     "bun.lock",
+    "README.md",
     "package.json",
-    "README.md"
+    ".gitignore"
   ]
 }
