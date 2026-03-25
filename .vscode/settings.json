@@ -16,7 +16,8 @@
     "tsconfig.json": true,
     "bun.lock": true,
     "README.md": true,
-    ".gitignore": true
+    ".gitignore": true,
+    "components.json": true
   },
   "hide-files.files": [
     ".next",
@@ -30,6 +31,7 @@
     "tsconfig.json",
     "bun.lock",
     "README.md",
-    ".gitignore"
+    ".gitignore",
+    "components.json"
   ]
 }
