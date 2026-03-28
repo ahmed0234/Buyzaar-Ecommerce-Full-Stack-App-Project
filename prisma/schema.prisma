@@ -16,6 +16,43 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+model Category {
+  id          String    @id @default(uuid())
+  name        String    @unique
+  products    Product[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+model Product {
+  id          String @id @default(uuid())
+  title       String
+  description String
+  tags        String[] @default([])
+
+  categoryId  String?
+  category    Category? @relation(fields: [categoryId], references: [id])
+
+  variants Variant[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Variant {
+  id String @id @default(uuid())
+
+  product   Product @relation(fields: [productId], references: [id])
+  productId String
+
+  color    String
+  size     String
+  price    Float
+  stock    Int
+  imageUrl String
+
+  createdAt DateTime @default(now())
+}
 
 enum Role {
   USER
